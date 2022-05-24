@@ -1,11 +1,11 @@
-resource "aws_instance" "Tf5" {
+resource "aws_instance" "Tf6" {
  ami = "ami-0022f774911c1d690"
  instance_type = "t2.micro"
  count = "1"
  key_name = "TestJenkins"
  security_groups = ["TF-SG"]
  tags = {
-    Name = "TF5"
+    Name = "TF6"
  }
 }
 
